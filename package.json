@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/trinix-systems/itresorerie-sdk-sources#readme",
   "dependencies": {
-    "@nestjs/axios": "^1.0.1",
+    "@nestjs/axios": "^1.0.2",
     "axios": "^1.2.2",
     "dotenv": "^16.3.1",
     "@trinix/app-utility": "ceboma/app-utility-sdk"

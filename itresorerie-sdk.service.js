@@ -130,7 +130,7 @@ var ITresorerieSDK = /** @class */ (function (_super) {
                     case 1:
                         _b.trys.push([1, 3, , 4]);
                         params = {
-                            login: username,
+                            username: username,
                             token: token
                         };
                         return [4 /*yield*/, this.htpUtility.doPost(URLS.CONST_GET_COMPTES, params)];
@@ -178,7 +178,7 @@ var ITresorerieSDK = /** @class */ (function (_super) {
                         _b.trys.push([1, 3, , 4]);
                         app_utility_1.AppUtilityControl.controlValueString(fkCentre, "Renseignez le centre");
                         params = {
-                            login: username,
+                            username: username,
                             token: token,
                             fkCentre: fkCentre
                         };
@@ -200,13 +200,13 @@ var ITresorerieSDK = /** @class */ (function (_super) {
                         return [3 /*break*/, 4];
                     case 3:
                         ex_3 = _b.sent();
-                        this.error().errorCode = app_utility_1.ErrorResponseStatus.KO;
+                        this.error().clear();
                         if (ex_3 instanceof app_utility_1.ValueDataException) {
                             this.error().errorDescription = ex_3.message;
                         }
                         else {
-                            this.error().errorDescription = app_error_const_1.AppErrorConst.ERR_HTTP_UNKNOW;
                             console.log(ex_3);
+                            this.error().errorDescription = app_error_const_1.AppErrorConst.ERR_UNKNOW;
                         }
                         return [3 /*break*/, 4];
                     case 4: return [2 /*return*/, list];

@@ -70,9 +70,6 @@ var HttpUtility = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        params.appKey = this._APPKEY;
-                        ;
-                        params.appMail = this._APPMAIL;
                         console.log("iTresorerieSDK doPost (params) : " + JSON.stringify(params));
                         obj = new app_utility_1.HttpDataResponse();
                         _a.label = 1;
