@@ -80,7 +80,7 @@ var HttpUtility = /** @class */ (function () {
                         _a.trys.push([1, 3, , 4]);
                         params.appKey = this._APPKEY;
                         params.appMail = this._APPMAIL;
-                        app_utility_1.AppUtilityControl.controlValueString(this._HOST, "Configurez le host de JennySys");
+                        app_utility_1.AppUtilityControl.controlValueString(this._HOST, "Configurez le host de iTresorerie");
                         console.log("[iTresorerieSDK] url ==> " + this._HOST + url);
                         return [4 /*yield*/, this.httpService.post(this._HOST + url, params, {
                                 auth: {
